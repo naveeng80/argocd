@@ -81,3 +81,14 @@ spec:
             name: navmongoexpsvc
             port:
               number: 8081              
+  
+  - host: javatest.local
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: navmongoexpsvc
+            port:
+              number: 8080 
